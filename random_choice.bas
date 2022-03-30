@@ -1,5 +1,5 @@
 Attribute VB_Name = "Módulo1"
-Function CHOOSE(labels, Optional weights)
+Function WCHOOSE(labels, Optional weights)
 
     Dim weights_array
     Dim sum_weights As Double
@@ -58,6 +58,6 @@ Function CHOOSE(labels, Optional weights)
          
     Next w
    
-   CHOOSE = WorksheetFunction.Index(labels, choice + 1)
+   WCHOOSE = WorksheetFunction.Index(labels, choice + 1)
 
 End Function
