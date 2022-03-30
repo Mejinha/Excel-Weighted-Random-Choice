@@ -1,5 +1,14 @@
 # Weighted Random Choice Function
-This code creates a VBA function to select a random element of an array, weighted by an array of weights or frequencies.
+
+## What does this code do?
+
+This code creates a VBA function to select a random element of an array, weighted by an array of weights or frequencies. 
+
+The idea for this code was developed a few years ago while working as an auditor for an insurance multinational. That time, we were highly dependant of bult-in excel solutions for selecting samples. The solution at the time involved using a combination of RANDBETWEEN, VLOOKUP and INDEX. Although this an easy and fast way of selecting samples, it fails at precision.
+
+## Who can benefit from this code?
+
+*Everyone!* 
 
 ## How to Install?
 
@@ -12,10 +21,10 @@ This code creates a VBA function to select a random element of an array, weighte
 The usage is very simple. You just need to call the function CHOICE, as shown below:
 
 ```sh
-=CHOICE(Labels, [Weights])
+=WCHOOSE(Labels, [Weights])
 ```
 
-The function **CHOICE** takes two arguments: Labels and Weights (Optional).
+The function **WCHOOSE** takes two arguments: Labels and Weights (Optional).
 
 **Labels** is the range of elements that identify each observation to be passed to the function.
 
@@ -34,7 +43,7 @@ The function **CHOICE** takes two arguments: Labels and Weights (Optional).
 
 
 ```sh
-=CHOICE(A2:A6, B2:B6)
+=WCHOOSE(A2:A6, B2:B6)
 ```
 
 ## Tips
